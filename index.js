@@ -137,7 +137,7 @@ GCloudAdapter.prototype.uploadFile = function (file, callback) {
 				public: true
 			})
 			.then((data) => {
-				file.path = '';
+				file.path = data[1].mediaLink;
 				file.etag = data[1].etag;
 				file.filename = data[1].name;
 				return callback(null, file);
@@ -155,7 +155,7 @@ GCloudAdapter.prototype.getFileURL = function (file) {
 	var bucket = this._resolveBucket(file);
 	var absolutePath = this._resolveAbsolutePath(file);
 
-	return 'https://storage.cloud.google.com/' + bucket + absolutePath;
+	return file.path;
 };
 
 GCloudAdapter.prototype.removeFile = function (file, callback) {
