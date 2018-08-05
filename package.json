@@ -1,0 +1,46 @@
+{
+  "name": "keystone-storage-adapter-google",
+  "version": "1.0.0",
+  "description": "Google cloud storage adapter for keystonejs",
+  "main": "index.js",
+  "contributors": [
+    "Kirupakaran H <kirupakaranh@gmail.com>",
+    "Joseph Gentle <me@josephg.com>",
+    "Mike Hazell <mike@thinkmill.com.au>",
+    "Jed Watson <jed@keystonejs.com>"
+  ],
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/kirupakaranh/keystone-storage-adapter-google/issues"
+  },
+  "homepage": "https://github.com/kirupakaranh/keystone-storage-adapter-google",
+  "dependencies": {
+    "@google-cloud/storage": "^1.7.0",
+    "debug": "^2.2.0",
+    "keystone-storage-namefunctions": "^1.0.0",
+    "object-assign": "^4.1.0"
+  },
+  "devDependencies": {
+    "eslint": "^3.2.2",
+    "eslint-config-keystone": "^3.0.0",
+    "mocha": "^3.0.0",
+    "proxyquire": "^2.0.1",
+    "sinon": "^6.0.0"
+  },
+  "scripts": {
+    "test": "mocha",
+    "lint": "eslint ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kirupakaranh/keystone-storage-adapter-google.git"
+  },
+  "keywords": [
+    "google-cloud",
+    "keystone",
+    "keystone-storage",
+    "keystonejs",
+    "google-cloud-storage",
+    "storage"
+  ]
+}
